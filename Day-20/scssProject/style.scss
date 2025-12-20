@@ -1,0 +1,68 @@
+@font-face{
+    font-family: junkwar;
+    src: url(./junkwar/Junkwar-Regular.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./islaimicHerospic/BG1.jpg');
+    // background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+
+    background-size: contain;
+    background-position: 30px 0;
+}
+main{
+    width: 90%;
+    height: 60%;
+    // background-color: blue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: junkwar;
+    h1{
+        font-size: 5rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-shadow:
+    0 0 5px #f08307,
+    0 0 10px #f08307,
+    0 0 20px #f08307,
+    0 0 60px #f08307;
+    }
+   
+    
+    .parent{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        .flex{
+            flex: 1;
+            transition: all .4s ease-in-out ;
+            min-width: 0;
+            // overflow: hidden;
+           border-right: 5px solid   ;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+            
+        }
+       .flex:hover{
+        cursor: pointer;
+        flex-grow: 2;
+       }
+    }
+}

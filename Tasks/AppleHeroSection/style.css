@@ -1,0 +1,81 @@
+@font-face{
+    font-family: appleFont;
+    src: url(./sf-pro-display/SFPRODISPLAYREGULAR.OTF);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x:none ;
+    font-family: appleFont;
+    background-color: #000000;
+}
+header{
+    position: relative;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    background-color: #454545;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+
+}
+nav li{
+    list-style: none;
+}
+nav li:hover{
+    color: rgb(230, 225, 225);
+    transition: all;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.text{
+    padding: 40px 10px;
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    row-gap: 10px;
+
+}
+h1{
+    font-size:60px ;
+}
+h3{
+    font-size: 30px;
+    font-weight:500;
+}
+.buttons button{
+    padding: 18px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3E77EE;
+    font-size: 18px;
+}
+#buy{
+    background-color: transparent;
+    border: 2px solid #3E77EE;
+    color: white;
+}
+#buy:hover{
+    background-color: #3E77EE;
+}
+main{
+    width:100% ;
+    height: 100%;
+    background: url(./hero_iphone_17_pro__bknyzxfk2agi_medium.jpg);
+    background-size: cover;
+    background-position: bottom;
+}

@@ -1,0 +1,47 @@
+@font-face{
+    font-family: Renzime;
+    src: url(./Renzime-Font/Renzime.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.hero{
+    background-image: url(./white-car-sunset.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Renzime;
+}
+.hero h1{
+    font-size: 60px;
+    letter-spacing: 8px;
+    font-weight: 800;
+    color: white;
+}
+.hero button{
+    padding: 10px 15px;
+    font-size: 25px;
+    border: 3px solid rgb(253, 253, 253);
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    /* margin-bottom: -30px; */
+    margin-top: -110px;
+    /* color: black; */
+}
+.hero button:hover{
+    background-color: #a04144;
+    scale: .9;
+    transition-duration: .5s;
+}

@@ -1,0 +1,12 @@
+@font-face{
+    font-family: horrer;
+    src: url(./Melted\ Monster.ttf);
+}
+h1{
+    font-size: 90px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* margin: 20% 20%; */
+    color: red;
+    font-family:'horrer';
+}

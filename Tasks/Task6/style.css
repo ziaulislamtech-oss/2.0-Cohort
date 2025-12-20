@@ -1,0 +1,158 @@
+@font-face{
+    font-family: custom;
+    src: url(./sprintura-demo/Sprintura\ Demo.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: montserrat;
+    color: white;
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    flex-direction: column;
+}
+#bg-video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   right: 0;
+   bottom: 0;
+   object-fit: cover;
+}
+
+.parent{
+    width: 80vw;
+    height: 80vh;
+    margin-top: 50px;
+    display: grid;
+    /* grid-template-columns: minmax(300px,350px) minmax(300px,350px) minmax(300px,350px); */
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "box1 box2  box3"
+                         "box1 box4  box5"
+                         "box6 box4  box5"
+                         "box6 box7  box7"
+    ;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 20px;
+    perspective: 450px;
+    /* background-color: #fff; */
+    /* margin-bottom: 100px; */
+}
+.box1{
+    grid-area: box1;
+    background-color: green;
+    background-image: url(./cartoonsImg/angryRedBird.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box2{
+    grid-area: box2;
+    background-color: red;
+    background-size: cover;
+    /* background-position: center; */
+    /* background-position-y: -70px; */
+    background-image: url(./cartoonsImg/Xman.jpg);
+}
+.box3{
+    grid-area: box3;
+    background-color: yellow;
+    background-image: url(./cartoonsImg/Dragon.jpg);
+    background-size: cover;
+    background-position: center;
+    /* padding: 10px; */
+}
+.box4{
+    grid-area: box4;
+    background-color: pink;
+    background-image: url(./cartoonsImg/godOfWar.jpg);
+    background-size: cover;
+    /* background-position-y: 10px; */
+}
+.box5{
+    grid-area: box5;
+    background-color: purple;
+    background-image: url(./cartoonsImg/hulk2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box6{
+    grid-area: box6;
+    background-color: black;
+    background-image: url(./cartoonsImg/ironMan2.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+.box7{
+    grid-area: box7;
+    background-color: black;
+    background-image: url(./cartoonsImg/Deadpool\ and\ Wolverine.jpeg);
+    background-size: cover;
+    background-position-y: -70px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+.box div{
+    background: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 30px;
+}
+.box div h3{
+    font-family: custom;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 3px;
+    /* padding-bottom: 5px; */
+    margin-bottom: 5px;
+}
+.box div p{
+    /* font-size: 18px; */
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.box{
+    perspective: 300px;
+    overflow: hidden;
+    transition: all ease .5s;
+    border-radius: 5px;
+    
+}
+.box:hover div{
+    transition: all ease .5s;
+    transform: translatey(-100%);
+}
+.box:hover{
+    transform: rotateX(20deg);
+}
+h1{
+    font-size: 85px;
+    font-weight:900;
+    text-align: center;
+    margin-top: 40px;
+}
+.bottom{
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+}
+.bottom h1{
+    color: transparent;
+}
