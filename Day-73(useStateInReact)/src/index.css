@@ -1,0 +1,27 @@
+.Male{
+  width: 300px;
+  height: 200px;
+  background-color: rgb(40, 192, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.Female{
+  width: 300px;
+  color: white;
+  height: 200px;
+  background-color: rgb(211, 61, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Others{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(56, 230, 40);
+}
