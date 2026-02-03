@@ -3,7 +3,7 @@ import React from 'react'
 const Kodex = () => {
   return (
     <div>
-      <h2>Kodex course</h2>
+      <h2>kodex courses</h2>
     </div>
   )
 }

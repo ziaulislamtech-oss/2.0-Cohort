@@ -4,15 +4,13 @@ import { Outlet } from 'react-router-dom'
 const Courses = () => {
   return (
     <div>
-     <div className='sale '>
-     <p>sale is live!!!</p>
-     <p>sale is live!!!</p>
-     <p>sale is live!!!</p>
-     <p>sale is live!!!</p>
-     <p>sale is live!!!</p>
-     <p>sale is live!!!</p>
-     <p>sale is live!!!</p>
-     <p>sale is live!!!</p>
+     <div className="sale">
+       <p>Courses is live</p>
+       <p>Courses is live</p>
+       <p>Courses is live</p>
+       <p>Courses is live</p>
+       <p>Courses is live</p>
+       <p>Courses is live</p>
      </div>
       <Outlet/>
     </div>

@@ -26,13 +26,13 @@ h2{
  font-size: 90px;
   font-weight: 600;
   position: absolute;
-  top: 60vh;
+  top: 66vh;
   left: 50vw;
   transform: translateX(-50%);
   text-decoration: underline;
   /* transform: translateY(-50%); */
   color: white;
-  white-space: nowrape;
+  white-space: nowrap;
 }
 .nav{
   display: flex;
@@ -67,4 +67,11 @@ h2{
   border-radius: 5px;
   cursor: pointer;
 
+}
+.active{
+  color: red;
+}
+.pending{
+  color: orange;
+  text-decoration: none;
 }
