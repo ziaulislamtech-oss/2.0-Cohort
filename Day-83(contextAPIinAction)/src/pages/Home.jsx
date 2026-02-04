@@ -5,8 +5,9 @@ const Home = () => {
   const navigate = useNavigate() 
   return (
     <div className='home'>
-      <h1>This is home page</h1>
-      <button className='cta' onClick={()=> {navigate('product')}}>Expore Products </button>
+      <h1>Upgrade Your Lifestyle</h1>
+      <p>Discover the best deals on premium electronics and fashion.</p>
+      <button className='cta' onClick={()=> {navigate('product')}}>Explore Products </button>
     </div>
   )
 }

@@ -20,7 +20,6 @@ const Product = () => {
   }
   return (
     <div>
-      <h3>product page</h3>
       <div className='allProducts'>
         {renderData}
 

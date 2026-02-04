@@ -1,8 +1,10 @@
 import React, { useContext } from 'react'
 import { productsDataContext } from '../context/ProductContext'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
+
 
 const ProductDetails = () => {
+  const navigate = useNavigate()
   const productData = useContext(productsDataContext)
   console.log(productData)
   const {id} = useParams()
@@ -15,11 +17,12 @@ const ProductDetails = () => {
   // If product not found
   if (!selectProduct) {
     return <div>Product not found!</div>
+  
   }
- console.log(selectProduct)
-  // console.log(params)
+  
+
   return (
-    <div>
+    <div className='productDetials'>
       <img src={selectProduct.image} alt="" />
       <h2>{selectProduct.title}</h2>
     </div>
